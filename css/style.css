@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar ---------------------------------- */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 66px;
+}
+
+#navbar::before {
+    content: '';
+    background-color: rgb(96 111 111);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+/* logo------- */
+
+#navbar #logo {}
+
+#navbar #logo img {
+    height: 70px;
+    border-radius: 50%;
+    margin: 6px 15px;
+}
+
+#navbar #info {
+    display: flex;
+}
+
+#navbar #info .list {
+    list-style: none;
+}
+
+#navbar #info a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 0px 12px;
+    padding: 0px 8px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    font-family: "Hina Mincho", serif;
+}
+
+#navbar #info a:hover {
+    color: rgb(66, 59, 59);
+    background-color: white;
+}
+
+
+/* Home Section CSS ---------------------- */
+
+#home {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 300px;
+    /* border: 4px solid black */
+}
+
+#home::before {
+    content: "";
+    background: url(../bg1.jpg) center center / cover no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 380px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1 {
+    color: white;
+    margin: 4px; 
+    font-family: 'Hina Mincho', serif;
+}
+
+#home p{
+    text-align: center;
+    padding: 0px 4px;
+    font-size: 1.4rem;
+    font-family: 'Hina Mincho', serif;
+    
+}
+#home p{
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(175, 155, 194);
+    color: rgb(15, 15, 15);
+}
+
+/* Services Section ---------------------------------------- */
+
+
+#services-container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    top: 0;
+    left: 0;
+    /* border: 2px solid red; */
+}
+#services-container .h-primary{
+    font-family: 'Hina Mincho', serif;
+    margin: 10px;
+}
+#services-container .h-secondary{
+    font-family: 'Hina Mincho', serif;
+    /* margin: 10px; */
+}
+#services{
+    display: flex;
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+    padding: 2px 10px;
+    border: 2px solid red;
+    background-color: rgb(212 224 196 / 38%);
+    border-radius: 23px;
+}
+
+#services .box .services-box{
+    margin: 5px;
+    padding: 3px 4px;
+}
+#services .box .image{
+    margin-bottom: 5px;
+}
+
+/* Provider Section -----------------------------------*/
+
+#provider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:0;
+    z-index: -1;
+    /* border: 2px solid violet; */
+}
+
+#provider-container::before{
+    content: '';
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    /* border-radius: 88px; */
+}
+
+#provider-container h1{
+    top: 10px;
+    margin-top: 20px;
+
+}
+#provider-container #provider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#provider-container #provider .provider-des{
+    margin: 2px;
+    padding: 48px;
+
+}
+#provider-container #provider img{
+    height: 90px;
+    
+}
+
+
+/* Contact Information----------------------- */
+
+#contact-container{
+    position: relative;
+    top:0;
+    margin: 4px 0px;
+}
+
+#contact-container::before{
+    content: '';
+    background: url('../contact.jpg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    /* border-radius: 88px; */
+
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box .contact-form label{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.contact-box .contact-form input{
+    background-color: thistle;
+    width: 100%;
+    border: 2px solid #bdadcc;
+    border-radius: 15px;
+    padding: 5px 0px;
+    margin: 1px -14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.contact-box .contact-form textarea{
+    background-color: thistle;
+    width: 100%;
+    border: 2px solid #bdadcc;
+    border-radius: 15px;
+    padding: 5px 0px;
+    margin: 1px -14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 2px;
+    /* height: 50px; */
+}
+/* Utility class -----------------------------*/
+
+
+.image{
+    height: 200px;
+}
+.h-primary {
+    text-align: center;
+    padding: 1px;
+    font-size: 2.1rem;
+}
+.h-secondary{
+    text-align: center;
+    padding: 1px;
+    font-size: 1.8rem;
+
+}
+.btn{
+    color: #c74141;
+    padding: 7px 27px;
+    border-radius: 24px;
+    margin: 17px 3px;
+    background-color: #86aba7;
+    border: 2px solid #635f5f;
+    cursor: pointer;
+    font-size: 18px;
+}
+p{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+
+/* Navbar Section  */
+
+#navbar{
+    flex-direction: column;
+    height: auto;
+}
+#navbar::before{
+    content: '';
+    background-color: rgb(154 203 203 / 64%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar #info a {
+    margin: 0px 12px;
+    padding: 0px 8px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+
+}
+
+
+/* Home Section */
+
+
+#home p{
+    text-align: center;
+    padding: 0px 4px;
+    font-size: 0.7rem;
+    font-family: 'Hina Mincho', serif;
+
+}
+/* Service Section */
+
+#services{
+    flex-direction: column;
+}
+#services-container{
+    height: auto;
+}
+
+
+/* Provider Section */
+#provider{
+    
+}
+#provider-container h1{
+    top: 10px;
+    margin-top: 20px;
+
+}
+#provider-container #provider{
+    flex-wrap: wrap;
+    height: auto;
+}
+#provider-container #provider .provider-des{
+    margin: 2px;
+    padding: 10px;
+
+}
+#provider-container #provider img{
+    height: 50px;
+    
+}
+
+/* Contact Section */
+.contact-box .contact-form{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-box .contact-form label{
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.contact-box .contact-form input{
+    padding: 3px 0px;
+    font-size: 12px;
+}
+.contact-box .contact-form textarea{
+    padding: 3px 0px;
+    font-size: 12px;
+}
+
+
+/* Footer  */
+
+/* Utility class -----------------------------*/
+
+
+.image{
+    height: 100px;
+    
+}
+.h-primary {
+    text-align: center;
+    padding: 1px;
+    font-size: 1.2rem;
+}
+.h-secondary{
+    text-align: center;
+    padding: 1px;
+    font-size: .8rem;
+
+}
+.btn{
+    color: #c74141;
+    padding: 2px 10px;
+    border-radius: 24px;
+    margin: 17px 3px;
+    background-color: #86aba7;
+    border: 2px solid #635f5f;
+    cursor: pointer;
+    font-size: 11px;
+}
+p{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
